@@ -1,5 +1,12 @@
 package suitebot.game;
 
+/**
+ * Internal communication object for the HTTP request
+ *
+ * You should use DIRECTION class as a response.
+ *
+ * DO NOT TOUCH THIS CODE!
+ */
 public class Move
 {
 	public static final Move UP = new Move(Direction.UP);

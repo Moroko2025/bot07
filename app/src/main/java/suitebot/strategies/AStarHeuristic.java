@@ -32,6 +32,7 @@ package suitebot.strategies;
  *
  * For each direction, the algorithm calculates a score = the number of reachable squares.
  * The direction with the highest score is likely the best move.
+ *
  * Potential optimizations and improvements:
  * Considering opponents: The algorithm currently ignores where opponents are—it could include a penalty for areas near enemy bots.
  * Limiting search depth: We can restrict the maximum number of steps to avoid excessive computation.
