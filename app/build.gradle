@@ -11,9 +11,9 @@ plugins {
 }
 
 repositories {
-    // Use Maven Central for resolving dependencies.
-    mavenCentral()
-    google()
+    maven {
+        url "https://repository.eng.netsuite.com/content/groups/public/"
+    }
 }
 
 dependencies {

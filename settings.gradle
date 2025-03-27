@@ -6,9 +6,10 @@
  */
 pluginManagement {
     repositories {
-        gradlePluginPortal()
-        mavenCentral()
-        google()
+        mavenLocal()
+        maven {
+            url = "https://repository.eng.netsuite.com/content/groups/public"
+        }
     }
 }
 
