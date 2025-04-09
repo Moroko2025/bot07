@@ -5,6 +5,7 @@ import suitebot.game.Direction;
 import suitebot.game.GameState;
 import suitebot.game.Point;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -68,13 +69,39 @@ public class SampleBotAi implements BotAi
 
 	private Point destination(Direction direction)
 	{
-		Point botLocation = gameState.getBotLocation(botId);
-		/**
-		 * TODO: this method does not care about game plan is without borders
-		 */
-		Point stepDestination = direction.from(botLocation);
 
-		return stepDestination;
+		int maxWidth = gameState.getPlanWidth();
+		int maxHeight = gameState.getPlanHeight();
+
+		Point botLocation = gameState.getBotLocation(botId);
+
+		System.out.println("Bot location" + botLocation);
+		System.out.println("Bot Id: " + botId);
+		System.out.println("Board Height: " + gameState.getPlanHeight());
+		System.out.println("Board Width: " + gameState.getPlanWidth());
+		System.out.println("Direction: " + direction);
+
+		Point stepDestination = direction.from(botLocation);
+		int new_x = stepDestination.x;
+		int new_y = stepDestination.y;
+
+		if(stepDestination.x == gameState.getPlanWidth() - 1){
+			new_x = 0;
+		} else if (stepDestination.x < 0) {
+			new_x = gameState.getPlanWidth() - 1;
+		}
+
+		if (stepDestination.y == gameState.getPlanHeight() - 1){
+			new_y = 0;
+		} else if (stepDestination.y < 0) {
+			new_y = gameState.getPlanHeight() - 1;
+		}
+
+		Point final_point = new Point(new_x, new_y);
+
+		System.out.println("Step destination: " + stepDestination);
+
+		return final_point;
 	}
 
 	@Override
