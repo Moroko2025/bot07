@@ -56,6 +56,7 @@ class MonteCarloTreeSearchTest {
         assertNotNull(moveScores);
         assertEquals(0, moveScores.get(Direction.LEFT)); // Move blocked
         assertTrue(moveScores.get(Direction.DOWN) > 1); // Move non-blocked, free space
+        System.out.println(moveScores);
     }
 
     /**
@@ -111,10 +112,12 @@ class MonteCarloTreeSearchTest {
         // Check expected scores for each direction
         // The result is random since game simulation is randomized, for repeatable algorithm you can change expectation to exact value
         // For this setup it results in maxDept or max reachable space
+        System.out.println(moveScores);
         assertTrue(moveScores.get(Direction.DOWN) > 1);  // Best move with open space
         assertEquals(0, moveScores.get(Direction.LEFT));  // Blocked by obstacle
         assertTrue(moveScores.get(Direction.RIGHT) > 1); // Limited by obstacles
         assertEquals(0, moveScores.get(Direction.UP));    // Blocked by obstacle
+        System.out.println(moveScores);
 
     }
 }
