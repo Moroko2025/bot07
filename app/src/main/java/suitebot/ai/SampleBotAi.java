@@ -64,18 +64,43 @@ public class SampleBotAi implements BotAi
 		//    .map(Optional::get)
 		//    .findFirst()
 		//    .orElse(Direction.DOWN);
-		return Call.getDirection();
+		return Call.getDirection(gameState);
 	}
 
 	private Point destination(Direction direction)
 	{
-		Point botLocation = gameState.getBotLocation(botId);
-		/**
-		 * TODO: this method does not care about game plan is without borders
-		 */
-		Point stepDestination = direction.from(botLocation);
+		int maxWidth = gameState.getPlanWidth() - 1;
+		int maxHeight = gameState.getPlanHeight() - 1;
 
-		return stepDestination;
+		Point botLocation = gameState.getBotLocation(botId);
+
+		System.out.println("Bot location" + botLocation);
+		System.out.println("Bot Id: " + botId);
+		System.out.println("Board Height: " + gameState.getPlanHeight());
+		System.out.println("Board Width: " + gameState.getPlanWidth());
+		System.out.println("Direction: " + direction);
+
+		Point stepDestination = direction.from(botLocation);
+		int new_x = stepDestination.x;
+		int new_y = stepDestination.y;
+
+		if(stepDestination.x == maxWidth){
+			new_x = 0;
+		} else if (stepDestination.x < 0) {
+			new_x = maxWidth;
+		}
+
+		if (stepDestination.y == maxHeight){
+			new_y = 0;
+		} else if (stepDestination.y < 0) {
+			new_y = maxHeight;
+		}
+
+		Point final_point = new Point(new_x, new_y);
+
+		System.out.println("Step destination: " + stepDestination);
+
+		return final_point;
 	}
 
 	@Override
