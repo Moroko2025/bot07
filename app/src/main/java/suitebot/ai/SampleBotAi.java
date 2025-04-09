@@ -5,10 +5,7 @@ import suitebot.game.Direction;
 import suitebot.game.GameState;
 import suitebot.game.Point;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
@@ -55,16 +52,17 @@ public class SampleBotAi implements BotAi
 		//selects first available free direction (random - because the direction list is in different order every time)
 		//TODO: this is just example app,
 		// you should implement exception handling, timing verification, and proper algorithm ;o) ...
-		//return Stream.of(
-		//    safeDirectionSupplier
-		//)
-		//    .map(Supplier::get)
-		//    .map(Stream::findFirst)
-		//    .filter(Optional::isPresent)
-		//    .map(Optional::get)
-		//    .findFirst()
-		//    .orElse(Direction.DOWN);
-		return Call.getDirection();
+		if (!Call.getDirection(botId,gameState).isEmpty())return Call.getDirection(botId,gameState).get(0);
+		else
+			return Stream.of(
+							safeDirectionSupplier
+					)
+					.map(Supplier::get)
+					.map(Stream::findFirst)
+					.filter(Optional::isPresent)
+					.map(Optional::get)
+					.findFirst()
+					.orElse(Direction.DOWN);
 	}
 
 	private Point destination(Direction direction)
