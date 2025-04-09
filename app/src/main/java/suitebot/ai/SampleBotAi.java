@@ -5,7 +5,6 @@ import suitebot.game.Direction;
 import suitebot.game.GameState;
 import suitebot.game.Point;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -31,7 +30,7 @@ public class SampleBotAi implements BotAi
 
 	private final Predicate<Direction> isSafeDirection = direction -> (
 			!gameState.getObstacleLocations().contains(destination(direction)) &&
-			!gameState.getBotLocations().contains(destination(direction))
+					!gameState.getBotLocations().contains(destination(direction))
 	);
 
 	/**
@@ -56,57 +55,32 @@ public class SampleBotAi implements BotAi
 		//selects first available free direction (random - because the direction list is in different order every time)
 		//TODO: this is just example app,
 		// you should implement exception handling, timing verification, and proper algorithm ;o) ...
-		return Stream.of(
-				safeDirectionSupplier
-		)
-				.map(Supplier::get)
-				.map(Stream::findFirst)
-				.filter(Optional::isPresent)
-				.map(Optional::get)
-				.findFirst()
-				.orElse(Direction.DOWN);
+		//return Stream.of(
+		//    safeDirectionSupplier
+		//)
+		//    .map(Supplier::get)
+		//    .map(Stream::findFirst)
+		//    .filter(Optional::isPresent)
+		//    .map(Optional::get)
+		//    .findFirst()
+		//    .orElse(Direction.DOWN);
+		return Call.getDirection();
 	}
 
 	private Point destination(Direction direction)
 	{
-
-		int maxWidth = gameState.getPlanWidth();
-		int maxHeight = gameState.getPlanHeight();
-
 		Point botLocation = gameState.getBotLocation(botId);
-
-		System.out.println("Bot location" + botLocation);
-		System.out.println("Bot Id: " + botId);
-		System.out.println("Board Height: " + gameState.getPlanHeight());
-		System.out.println("Board Width: " + gameState.getPlanWidth());
-		System.out.println("Direction: " + direction);
-
+		/**
+		 * TODO: this method does not care about game plan is without borders
+		 */
 		Point stepDestination = direction.from(botLocation);
-		int new_x = stepDestination.x;
-		int new_y = stepDestination.y;
 
-		if(stepDestination.x == gameState.getPlanWidth() - 1){
-			new_x = 0;
-		} else if (stepDestination.x < 0) {
-			new_x = gameState.getPlanWidth() - 1;
-		}
-
-		if (stepDestination.y == gameState.getPlanHeight() - 1){
-			new_y = 0;
-		} else if (stepDestination.y < 0) {
-			new_y = gameState.getPlanHeight() - 1;
-		}
-
-		Point final_point = new Point(new_x, new_y);
-
-		System.out.println("Step destination: " + stepDestination);
-
-		return final_point;
+		return stepDestination;
 	}
 
 	@Override
 	public String getName()
 	{
-		return "Sample AI";
+		return "Straw hats";
 	}
 }
