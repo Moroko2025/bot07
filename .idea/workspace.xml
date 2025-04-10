@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0d1b945-1683-40b2-9c70-9dbad17048bb" name="Changes" comment="Monte Carlo V2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/suitebot/ai/Call.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/suitebot/ai/Call.java" afterDir="false" />
-    </list>
+    <list default="true" id="b0d1b945-1683-40b2-9c70-9dbad17048bb" name="Changes" comment="Monte Carlo V2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +143,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "testing",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/webdev/SuiteBot/bots/bot01/app/src/test/java/suitebot",
     "node.js.detected.package.eslint": "true",
@@ -310,6 +307,7 @@
       <workItem from="1712311579441" duration="5188000" />
       <workItem from="1712557696744" duration="17016000" />
       <workItem from="1744191487171" duration="17531000" />
+      <workItem from="1744284125366" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="Added border check">
       <option name="closed" value="true" />
