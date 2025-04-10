@@ -15,20 +15,18 @@ public class Call {
 
     private static final int SIMULATION_DEPTH = 25; // Number of steps ahead Monte Carlo should simulate
     private static final int SIMULATION_ITERATIONS = 120; // How many simulations are ran to evaluate every move
-    private static final double ENEMY_AVOIDANCE_WEIGHT = 2; // Higher values prioritize avoiding other snakes
+    private static final double ENEMY_AVOIDANCE_WEIGHT = 1; // Higher values prioritize avoiding other snakes
 
     /**
-     * Uses Monte Carlo Tree Search to determine the best direction for the bot to move
+     * We use Monte Carlo Tree Search to determine the best direction for the bot to move
      * in a game with multiple snakes.
      *
-     * @param gameState The current state of the game
-     * @return The best direction to move based on MCTS evaluation
      */
     public static Direction getDirection(int botId ,GameState gameState) {
 
         int totalTiles = gameState.getPlanWidth() * gameState.getPlanHeight();
         int adaptiveIterations = Math.max(200, totalTiles / 5);
-        int dynamicDepth = Math.min(60, totalTiles / 10);
+        int dynamicDepth = Math.min(90, totalTiles / 10);
 
 
         // Evaluate all possible moves using MCTS
@@ -217,13 +215,4 @@ public class Call {
         return new Point(x, y);
     }
 
-    /**
-     * Get the bot ID from the game state
-     */
-    private static int getBotId(GameState gameState) {
-
-        // Default approach: return the first bot ID from the game state
-        // Updated to use getLiveBotIds instead of getBotIds
-        return gameState.getLiveBotIds().iterator().next();
-    }
 }

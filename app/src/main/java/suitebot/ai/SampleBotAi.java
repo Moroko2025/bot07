@@ -66,7 +66,8 @@ public class SampleBotAi implements BotAi
 //		else
 //			return Call.getDirection(botId,gameState);
 		System.out.println("Number of calls" + i++);
-		return Call.getDirection(botId,gameState);
+
+		return Call.getDirection(botId, gameState);
 	}
 
 	private Point destination(Direction direction)

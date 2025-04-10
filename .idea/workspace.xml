@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0d1b945-1683-40b2-9c70-9dbad17048bb" name="Changes" comment="Monte Carlo V2" />
+    <list default="true" id="b0d1b945-1683-40b2-9c70-9dbad17048bb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/suitebot/ai/Call.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/suitebot/ai/Call.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,24 +29,35 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SuiteBotClient" type="f1a62948:ProjectNode" />
+                <item name="SuiteBotKit" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SuiteBotClient" type="f1a62948:ProjectNode" />
+                <item name="SuiteBotKit" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SuiteBotClient" type="f1a62948:ProjectNode" />
+                <item name="SuiteBotKit" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SuiteBotKit" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SuiteBotClient" type="f1a62948:ProjectNode" />
+                <item name="SuiteBotKit" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SuiteBotKit" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -52,33 +66,14 @@
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;RedVelvetOth&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Moroko2025/bot07.git&quot;,
-    &quot;accountId&quot;: &quot;0636b142-f20e-4f96-b8ac-6cc1ce510899&quot;
-  }
-}</component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -97,31 +92,19 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.BotServer (1).executor": "Run",
-    "Application.BotServer.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Gradle.BotAiRequestHandlerTest.executor": "Run",
     "Gradle.Build Client.executor": "Run",
     "Gradle.Build bot01.executor": "Run",
-    "Gradle.Build bot07.executor": "Run",
     "Gradle.Client [:BotServer.main()].executor": "Debug",
     "Gradle.DirectionTest.executor": "Run",
     "Gradle.GameStateFactoryTest.executor": "Run",
     "Gradle.ImmutableGameStateBuilderTest (1).executor": "Run",
     "Gradle.ImmutableGameStateBuilderTest.executor": "Run",
     "Gradle.ImmutableGameStateTest.executor": "Run",
-    "Gradle.MonteCarloTreeSearchTest.executor": "Run",
-    "Gradle.MonteCarloTreeSearchTest.testBlockedMoves.executor": "Run",
-    "Gradle.MonteCarloTreeSearchTest.testDepthImpact.executor": "Run",
-    "Gradle.MonteCarloTreeSearchTest.testEscapeFromTrap.executor": "Run",
-    "Gradle.MonteCarloTreeSearchTest.testMultiplePathsWithObstacles.executor": "Run",
-    "Gradle.MonteCarloTreeSearchTest.testPreferenceForOpenSpace.executor": "Run",
-    "Gradle.MonteCarloTreeSearchTest.testSimpleOpenBoard.executor": "Run",
-    "Gradle.MonteCarloTreeSearchTest.testSurvivabilityInTightSpace.executor": "Run",
-    "Gradle.MonteCarloTreeSearchTest.testWithObstacles.executor": "Run",
     "Gradle.PointTest.executor": "Run",
     "Gradle.SampleBotAiTest.executor": "Run",
-    "Gradle.SampleBotAiTest.testAvoidsObstacles.executor": "Run",
-    "Gradle.SampleBotAiTest.testAvoidsObstacles2.executor": "Run",
+    "Gradle.SampleBotAiTest.testAvoidsObstacles2.executor": "Debug",
     "Gradle.SimpleServerTest.executor": "Run",
     "Gradle.Tests in 'SuiteBotKit.app.test'.executor": "Run",
     "Gradle.Tests in 'suitebot'.executor": "Run",
@@ -131,17 +114,12 @@
     "Gradle.bot01 [run].executor": "Run",
     "Gradle.bot01 [test].executor": "Run",
     "Gradle.bot01:app [:app:BotServer.main()].executor": "Debug",
-    "Gradle.bot07 [build].executor": "Run",
-    "Gradle.bot07 [check].executor": "Run",
-    "Gradle.bot07 [test].executor": "Run",
-    "Gradle.bot07:app [:app:suitebot.ai.Call.main()].executor": "Run",
     "Gradle.bot07:app [:app:suitebot.ai.GameSimulationTest.main()].executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -154,7 +132,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.45632184",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -164,13 +142,13 @@
       <recent name="C:\webdev\SuiteBot\bots\bot01\app\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GameSimulationTest">
-    <configuration name="GameSimulationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="suitebot.ai.GameSimulationTest" />
-      <module name="SuiteBotClient.app.main" />
+  <component name="RunManager">
+    <configuration name="BotServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="suitebot.BotServer" />
+      <module name="SuiteBotKit.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="suitebot.ai.*" />
+          <option name="PATTERN" value="suitebot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -178,7 +156,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonteCarloTreeSearchTest.testPreferenceForOpenSpace" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BotAiRequestHandlerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -191,7 +169,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;suitebot.strategies.MonteCarloTreeSearchTest.testPreferenceForOpenSpace&quot;" />
+            <option value="&quot;suitebot.BotAiRequestHandlerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -202,7 +180,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MonteCarloTreeSearchTest.testSurvivabilityInTightSpace" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SampleBotAiTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -215,7 +193,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;suitebot.strategies.MonteCarloTreeSearchTest.testSurvivabilityInTightSpace&quot;" />
+            <option value="&quot;suitebot.ai.SampleBotAiTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -226,72 +204,76 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="bot07 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SimpleServerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value=":app:test" />
+            <option value="--tests" />
+            <option value="&quot;suitebot.server.SimpleServerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="bot07 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'suitebot.game'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
+            <option value=":app:test" />
+            <option value="--tests" />
+            <option value="&quot;suitebot.game.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.GameSimulationTest" />
-      <item itemvalue="Gradle.MonteCarloTreeSearchTest.testPreferenceForOpenSpace" />
-      <item itemvalue="Gradle.MonteCarloTreeSearchTest.testSurvivabilityInTightSpace" />
-      <item itemvalue="Gradle.bot07 [build]" />
-      <item itemvalue="Gradle.bot07 [test]" />
+      <item itemvalue="Application.BotServer" />
+      <item itemvalue="Gradle.BotAiRequestHandlerTest" />
+      <item itemvalue="Gradle.SampleBotAiTest" />
+      <item itemvalue="Gradle.SimpleServerTest" />
+      <item itemvalue="Gradle.Tests in 'suitebot.game'" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.bot07 [test]" />
-        <item itemvalue="Gradle.bot07 [build]" />
-        <item itemvalue="Application.GameSimulationTest" />
-        <item itemvalue="Gradle.MonteCarloTreeSearchTest.testPreferenceForOpenSpace" />
-        <item itemvalue="Gradle.MonteCarloTreeSearchTest.testSurvivabilityInTightSpace" />
+        <item itemvalue="Application.BotServer" />
+        <item itemvalue="Gradle.SampleBotAiTest" />
+        <item itemvalue="Gradle.SimpleServerTest" />
+        <item itemvalue="Gradle.BotAiRequestHandlerTest" />
+        <item itemvalue="Gradle.Tests in 'suitebot.game'" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-ae57be32" />
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
       </set>
     </attachedChunks>
   </component>
@@ -306,53 +288,13 @@
       <workItem from="1712228897773" duration="506000" />
       <workItem from="1712311579441" duration="5188000" />
       <workItem from="1712557696744" duration="17016000" />
-      <workItem from="1744191487171" duration="17531000" />
-      <workItem from="1744284125366" duration="14000" />
     </task>
-    <task id="LOCAL-00001" summary="Added border check">
-      <option name="closed" value="true" />
-      <created>1744199564354</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1744199564354</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Round 1">
-      <option name="closed" value="true" />
-      <created>1744199800254</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1744199800254</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Round 1 (fixed)">
-      <option name="closed" value="true" />
-      <created>1744200603233</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1744200603233</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Monte Carlo V2">
-      <option name="closed" value="true" />
-      <created>1744281237862</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1744281237862</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="c63423aa-3562-4410-8c53-70d43b6caed1" value="TOOL_WINDOW" />
-      </map>
-    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -360,20 +302,8 @@
             <State />
           </value>
         </entry>
-        <entry key="c63423aa-3562-4410-8c53-70d43b6caed1">
-          <value>
-            <State />
-          </value>
-        </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added border check" />
-    <MESSAGE value="Round 1" />
-    <MESSAGE value="Round 1 (fixed)" />
-    <MESSAGE value="Monte Carlo V2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Monte Carlo V2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
