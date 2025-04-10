@@ -13,12 +13,9 @@ import java.util.*;
  */
 public class Call {
 
-    // Configuration for the MCTS algorithm
-    private static final int SIMULATION_DEPTH = 15;
-    private static final int SIMULATION_ITERATIONS = 120;
-
-    // Additional parameters for multi-snake strategy
-    private static final double ENEMY_AVOIDANCE_WEIGHT = 1.5; // Higher values prioritize avoiding other snakes
+    private static final int SIMULATION_DEPTH = 25; // Number of steps ahead Monte Carlo should simulate
+    private static final int SIMULATION_ITERATIONS = 120; // How many simulations are ran to evaluate every move
+    private static final double ENEMY_AVOIDANCE_WEIGHT = 2; // Higher values prioritize avoiding other snakes
 
     /**
      * Uses Monte Carlo Tree Search to determine the best direction for the bot to move

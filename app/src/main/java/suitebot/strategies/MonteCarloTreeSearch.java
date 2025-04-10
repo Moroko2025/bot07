@@ -52,8 +52,6 @@ import java.util.*;
  */
 
 public class MonteCarloTreeSearch {
-    private static final int DEFAULT_SIMULATION_DEPTH = 10;
-    private static final int DEFAULT_ITERATIONS = 100;
     private static final Random random = new Random(123);
 
     public static Map<Direction, Integer> evaluateMoves(int botId, GameState gameState, int maxDepth, int iterations) {

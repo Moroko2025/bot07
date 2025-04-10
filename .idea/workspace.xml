@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b0d1b945-1683-40b2-9c70-9dbad17048bb" name="Changes" comment="Round 1 (fixed)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/suitebot/ai/BotAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/suitebot/ai/BotAi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/suitebot/ai/Call.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/suitebot/ai/Call.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/suitebot/ai/SampleBotAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/suitebot/ai/SampleBotAi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/suitebot/strategies/MonteCarloTreeSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/suitebot/strategies/MonteCarloTreeSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/suitebot/ai/SampleBotAiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/suitebot/ai/SampleBotAiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/suitebot/strategies/MonteCarloTreeSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/suitebot/strategies/MonteCarloTreeSearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,18 +73,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "RedVelvetOth"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RedVelvetOth&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Moroko2025/bot07.git",
-    "accountId": "0636b142-f20e-4f96-b8ac-6cc1ce510899"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Moroko2025/bot07.git&quot;,
+    &quot;accountId&quot;: &quot;0636b142-f20e-4f96-b8ac-6cc1ce510899&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -142,6 +141,7 @@
     "Gradle.bot07 [check].executor": "Run",
     "Gradle.bot07 [test].executor": "Run",
     "Gradle.bot07:app [:app:suitebot.ai.Call.main()].executor": "Run",
+    "Gradle.bot07:app [:app:suitebot.ai.GameSimulationTest.main()].executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -149,7 +149,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "testing",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/webdev/SuiteBot/bots/bot01/app/src/test/java/suitebot",
     "node.js.detected.package.eslint": "true",
@@ -170,7 +170,20 @@
       <recent name="C:\webdev\SuiteBot\bots\bot01\app\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MonteCarloTreeSearchTest.testPreferenceForOpenSpace">
+  <component name="RunManager" selected="Application.GameSimulationTest">
+    <configuration name="GameSimulationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="suitebot.ai.GameSimulationTest" />
+      <module name="SuiteBotClient.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="suitebot.ai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MonteCarloTreeSearchTest.testPreferenceForOpenSpace" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -209,30 +222,6 @@
             <option value=":app:test" />
             <option value="--tests" />
             <option value="&quot;suitebot.strategies.MonteCarloTreeSearchTest.testSurvivabilityInTightSpace&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="MonteCarloTreeSearchTest.testWithObstacles" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-            <option value="--tests" />
-            <option value="&quot;suitebot.strategies.MonteCarloTreeSearchTest.testWithObstacles&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -288,19 +277,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.GameSimulationTest" />
       <item itemvalue="Gradle.MonteCarloTreeSearchTest.testPreferenceForOpenSpace" />
       <item itemvalue="Gradle.MonteCarloTreeSearchTest.testSurvivabilityInTightSpace" />
-      <item itemvalue="Gradle.MonteCarloTreeSearchTest.testWithObstacles" />
       <item itemvalue="Gradle.bot07 [build]" />
       <item itemvalue="Gradle.bot07 [test]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.bot07 [test]" />
+        <item itemvalue="Gradle.bot07 [build]" />
+        <item itemvalue="Application.GameSimulationTest" />
         <item itemvalue="Gradle.MonteCarloTreeSearchTest.testPreferenceForOpenSpace" />
         <item itemvalue="Gradle.MonteCarloTreeSearchTest.testSurvivabilityInTightSpace" />
-        <item itemvalue="Gradle.bot07 [test]" />
-        <item itemvalue="Gradle.MonteCarloTreeSearchTest.testWithObstacles" />
-        <item itemvalue="Gradle.bot07 [build]" />
       </list>
     </recent_temporary>
   </component>

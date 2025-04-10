@@ -2,7 +2,7 @@ package suitebot.ai;
 
 import suitebot.game.Direction;
 import suitebot.game.GameState;
-import suitebot.game.Move;
+
 
 public interface BotAi
 {

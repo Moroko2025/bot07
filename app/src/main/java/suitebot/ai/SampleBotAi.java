@@ -1,17 +1,12 @@
 package suitebot.ai;
-
-import com.google.common.collect.ImmutableList;
 import suitebot.game.Direction;
 import suitebot.game.GameState;
 import suitebot.game.Point;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
+
+
 import java.util.function.Predicate;
-import java.util.function.Supplier;
-import java.util.stream.Stream;
+
 
 /**
  * Sample AI. The AI has some serious flaws, which is intentional.
@@ -26,7 +21,7 @@ public class SampleBotAi implements BotAi
 	 * The data of the game on the basis of which you choose your move
 	 */
 	private GameState gameState;
-
+	static int i = 0;
 
 	private final Predicate<Direction> isSafeDirection = direction -> (
 			!gameState.getObstacleLocations().contains(destination(direction)) &&
@@ -38,19 +33,12 @@ public class SampleBotAi implements BotAi
 	 * otherwise, go down.
 	 */
 	@Override
-	public Direction makeMove(int botId, GameState gameState)
-	{
+	public Direction makeMove(int botId, GameState gameState) {
 		this.botId = botId;
 		this.gameState = gameState;
 
 
 		//Available directions - based on game plan orientation, not the bot actual direction
-		List<Direction> directions = new ArrayList<>(ImmutableList.of(
-				Direction.LEFT, Direction.RIGHT, Direction.UP, Direction.DOWN));
-		//random schuffle directions
-		Collections.shuffle(directions);
-
-		Supplier<Stream<Direction>> safeDirectionSupplier = () -> directions.stream().filter(isSafeDirection);
 
 		//selects first available free direction (random - because the direction list is in different order every time)
 		//TODO: this is just example app,
@@ -64,6 +52,20 @@ public class SampleBotAi implements BotAi
 		//    .map(Optional::get)
 		//    .findFirst()
 		//    .orElse(Direction.DOWN);
+		long startTime = System.nanoTime();
+
+		long duration = System.nanoTime() - startTime;
+		double durationMs = duration / 1_000_000.0;
+		System.out.printf("Bot %d [%s] decision time: %.2f ms\n", botId, getName(), durationMs);
+//		Direction d= Call2.getDirection(botId,gameState);
+//
+//		if (d!=null){
+//			System.out.println("!Call.getDirection(botId,gameState).isEmpty() : "+ d);
+//			return d;
+//		}
+//		else
+//			return Call.getDirection(botId,gameState);
+		System.out.println("Number of calls" + i++);
 		return Call.getDirection(botId,gameState);
 	}
 
