@@ -64,7 +64,7 @@ public class SampleBotAi implements BotAi
 		//    .map(Optional::get)
 		//    .findFirst()
 		//    .orElse(Direction.DOWN);
-		return Call.getDirection(gameState);
+		return Call.getDirection(botId,gameState);
 	}
 
 	private Point destination(Direction direction)

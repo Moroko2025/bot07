@@ -27,9 +27,8 @@ public class Call {
      * @param gameState The current state of the game
      * @return The best direction to move based on MCTS evaluation
      */
-    public static Direction getDirection(GameState gameState) {
+    public static Direction getDirection(int botId ,GameState gameState) {
         // Get our bot ID from the calling context
-        int botId = getBotId(gameState);
 
         // Evaluate all possible moves using MCTS
         Map<Direction, Integer> moveScores = MonteCarloTreeSearch.evaluateMoves(
