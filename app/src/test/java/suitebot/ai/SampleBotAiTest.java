@@ -18,19 +18,25 @@ class SampleBotAiTest
 
 		GameState gameState = GameStateFactory.createFromString(gameStateAsString);
 
-		//assertThat(new SampleBotAi().makeMove(1, gameState)).isEqualTo(Direction.UP);
+		assertThat(new SampleBotAi().makeMove(1, gameState)).isEqualTo(Direction.DOWN);
 	}
 
 	@Test
 	void testAvoidsObstacles2()
 	{
-		String gameStateAsString = "* **\n" +
-								   "*12 \n" +
-								   " 34*\n" +
-								   "** *\n";
+		String gameStateAsString = "**********\n" +
+				"* 1      *\n" +
+				"*  *     *\n" +
+				"*2 *  3  *\n" +
+				"*  *     *\n" +
+				"*  *     *\n" +
+				"*        *\n" +
+				"*   *    *\n" +
+				"*   4    *\n" +
+				"**********";
 
 		GameState gameState = GameStateFactory.createFromString(gameStateAsString);
 
-		//assertThat(new SampleBotAi().makeMove(1, gameState)).isEqualTo(Direction.RIGHT);
+		assertThat(new SampleBotAi().makeMove(1, gameState)).isEqualTo(Direction.RIGHT);
 	}
 }
