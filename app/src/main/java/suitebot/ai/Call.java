@@ -25,14 +25,18 @@ public class Call {
      * @return The best direction to move based on MCTS evaluation
      */
     public static Direction getDirection(int botId ,GameState gameState) {
-        // Get our bot ID from the calling context
+
+        int totalTiles = gameState.getPlanWidth() * gameState.getPlanHeight();
+        int adaptiveIterations = Math.max(200, totalTiles / 5);
+        int dynamicDepth = Math.min(60, totalTiles / 10);
+
 
         // Evaluate all possible moves using MCTS
         Map<Direction, Integer> moveScores = MonteCarloTreeSearch.evaluateMoves(
                 botId,
                 gameState,
-                SIMULATION_DEPTH,
-                SIMULATION_ITERATIONS
+                adaptiveIterations,
+                dynamicDepth
         );
 
         // Apply additional strategic considerations for multi-snake games
@@ -142,8 +146,30 @@ public class Call {
             }
         }
 
-        return visited.size();
+        int deadEnds = countDeadEnds(visited, gameState);
+        return visited.size() - deadEnds;
     }
+
+    private static int countDeadEnds(Set<Point> region, GameState gameState) {
+        int count = 0;
+        int width = gameState.getPlanWidth();
+        int height = gameState.getPlanHeight();
+        Set<Point> obstacles = gameState.getObstacleLocations();
+
+        for (Point point : region) {
+            int freeNeighbors = 0;
+            for (Direction dir : Direction.values()) {
+                Point neighbor = wrapAround(dir.from(point), width, height);
+                if (region.contains(neighbor) && !obstacles.contains(neighbor)) {
+                    freeNeighbors++;
+                }
+            }
+            if (freeNeighbors <= 1) count++; // dead end
+        }
+
+        return count;
+    }
+
 
     /**
      * Get all valid moves from the current position
